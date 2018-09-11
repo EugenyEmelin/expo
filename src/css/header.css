@@ -1,0 +1,108 @@
+/*  header hover element bgc = #095fa3     */
+.header, .header__social-links, .sign-in__link, .lang-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.header {
+    position: relative;
+    height: 40px;
+    width: 100vw;
+    background-color: #09508b;
+    top: 0;
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*top: 0;*/
+}
+
+.header__lang-selector {
+    color: #ffffff;
+    cursor: default;
+    width: 46px;
+    z-index: 99;
+}
+.svg-dropdown-icon {
+    transition: all .15s ease-in-out;
+}
+.lang-selector {
+    height: 40px;
+    padding-left: 8px;
+}
+.header__lang-selector:hover {
+    background-color: #095fa3;
+}
+.header__lang-selector:hover .svg-dropdown-icon {
+    transform: rotate(180deg);
+    transition: all .15s ease-in-out;
+}
+.lang-selector__inner {
+     /*display: none;*/
+    opacity: 0;
+    /*height: 0;*/
+    transition: all .2s ease-in-out;
+ }
+
+.header__lang-selector:hover .lang-selector__inner {
+    opacity: 1;
+    /*display: block;*/
+    transition: all .2s ease-in-out;
+}
+.lang-selector__current {
+    display: inline-block;
+}
+.lang-selector__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #095fa3;
+    color: #c6c6c6;
+}
+.lang-selector__item {
+    position: absolute;
+    width: 46px;
+    height: 40px;
+    /*color: #ffffff;*/
+    background-color: #095fa3;
+}
+.lang-selector__link {
+    color: inherit;
+    display: block;
+    padding: 10px 0 0 8px;
+}
+.lang-selector__link:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+.header__social-links {
+
+}
+.social-links__item {
+    color: #fff;
+    margin: 0 15px;
+}
+.social-links__img {
+    height: 20px;
+}
+.social-link {
+    width: 100%;
+    height: 100%;
+}
+.sign-in__link {
+    height: 40px;
+    padding-right: 8px;
+}
+.sign-in__link:hover {
+    background-color: #095fa3;
+}
+.sign-in__img {
+    height: 25px;
+}
+.sign-in__title {
+    color: #ffffff;
+    padding: 10px;
+}

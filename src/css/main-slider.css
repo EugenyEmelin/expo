@@ -1,0 +1,39 @@
+.main-slider__container {
+    width: 100vw;
+    position: relative;
+    height: calc(75vh - 40px);
+    overflow: hidden;
+}
+.main-slider {
+    position: relative;
+    overflow: hidden;
+    /*height: 670px;*/
+    background-color: #181818;
+}
+.main-slider__item {
+    overflow: hidden;
+    width: 100vw;
+    /*height: 75vh;*/
+    /*height: calc(75vh - 40px);*/
+
+}
+#main-slider__tablet, #main-slider__hand {
+    position: absolute;
+    z-index: 99;
+}
+#main-slider__tablet {
+    bottom: -100px;
+    right: 250px;
+    max-height: 80vh;
+}
+#main-slider__hand {
+    bottom: -150px;
+    right: 0;
+    max-height: 60vh;
+}
+.main-slider__img {
+    width: auto;
+    /*height: auto;*/
+    min-height: calc(75vh - 40px);
+}
+
