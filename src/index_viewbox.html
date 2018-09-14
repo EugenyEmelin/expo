@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <!--<link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">-->
-    <link rel="stylesheet" href="../bower_components/pagePiling.js/jquery.pagepiling.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main-slider.css">
     <link rel="stylesheet" href="css/main-carousel.css">
     <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/expositions.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/pagePiling.js/dist/jquery.pagepiling.min.js"></script>
     <script src="js/sliders.js"></script>
-    <!--<script src="js/libs/siema.min.js"></script>-->
     <script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
 </head>
 <body>
@@ -70,7 +70,7 @@
         <div class="main-slider__container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/pexels-photo-11744.jpeg" alt="" class="main-slider__img">
+                    <img src="img/main-slider-images/tablet-screen.png" alt="" class="main-slider__img">
                 </div>
                 <div class="swiper-slide">
                     <img src="img/pexels-photo-374710.jpeg" alt="" class="main-slider__img">
@@ -85,9 +85,12 @@
                     <img src="img/adventure-air-aircraft-36487.jpg" alt="" class="main-slider__img">
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <img src="img/main-slider-images/tablet.png" alt="" id="main-slider__tablet">
-            <img src="img/main-slider-images/hand.png" alt="" id="main-slider__hand">
+            <div class="main-slider__pagination"></div>
+            <div class="tablet-and-hands">
+                <div class="tablet-display"></div>
+                <img src="img/main-slider-images/tablet.png" alt="" id="main-slider__tablet">
+                <img src="img/main-slider-images/hand.png" alt="" id="main-slider__hand">
+            </div>
         </div>
         <div class="main-carousel__container">
             <div class="main-carousel swiper-wrapper">
@@ -158,32 +161,172 @@
             </div>
         </div>
     </div>
-    <div class="section"></div>
+    <div class="expositions-and-events section">
+        <div class="expositions-container">
+            <div class="section-header expo-header container">
+                <h1 class="section-title">ПОСТОЯННЫЕ ВЫСТАВКИ</h1>
+                <a href="#" class="section-title__link">ВСЕ ВЫСТАВКИ</a>
+            </div>
+            <div class="expositions-wrapper">
+                <div class="x1-half-width exposition-item">
+                    <img src="img/expositions/11.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">ВЫСТАВКА ФРАНШИЗ</h3>
+                </div>
+                <div class="x1-half-width exposition-item">
+                    <img src="img/expositions/2.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">ВЫСТАВКА БЕЗОПАСНОСТИ</h3>
+                </div>
+                <div class="x1-width x2-height exposition-item">
+                    <img src="img/expositions/10.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">МЕБЕЛЬ И ИНТЕРЬЕР</h3>
+                </div>
+                <div class="x1-width exposition-item">
+                    <img src="img/expositions/7.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">ТРАНСПОРТ И ЛОГИСТИКА</h3>
+                </div>
+                <div class="x1-width exposition-item">
+                    <img src="img/expositions/1.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">АВТОМОБИЛЬНАЯ ВЫСТАВКА</h3>
+                </div>
+                <div class="x1-width exposition-item">
+                    <img src="img/expositions/6.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">СЕЛЬСКОЕ ХОЗЯЙСТВО</h3>
+                </div>
+                <div class="x1-width exposition-item">
+                    <img src="img/expositions/9.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">КАРЬЕРА И ОБРАЗОВАНИЕ</h3>
+                </div>
+                <div class="x1-width exposition-item">
+                    <img src="img/expositions/3.png" alt="" class="exposition-item__img">
+                    <h3 class="item-into-title">КРАСОТА И ЗДОРОВЬЕ</h3>
+                </div>
+            </div>
+        </div>
+        <div class="events-container">
+            <div class="section-header container">
+                <h1 class="section-title">КАЛЕНДАРЬ СОБЫТИЙ</h1>
+                <a href="#" class="section-title__link">
+                    <span class="title__link-leftArrow"><</span>
+                    ИЮЛЬ
+                    <span class="title__link-rightArrow">></span>
+                </a>
+            </div>
+            <div class="events-wrapper swiper-wrapper">
+                <div class="events-item swiper-slide">
+                    <div class="events-item__image-container">
+                        <img src="img/events/event2.png" alt="" class="events-item__img">
+                        <div class="item-into-shadow"></div>
+                        <h3 class="item-into-title">22-24 августа</h3>
+                    </div>
+                    <div class="events-item__info-container">
+                        <h4 class="info-title">SHOWESSTAR 2018</h4>
+                        <div class="info">
+                            <span class="tag">Одежда,</span>
+                            <span class="tag">обувь,</span>
+                            <span class="tag">аксессуары</span>
+                        </div>
+                        <h5 class="event-date">22-24 августа</h5>
+                        <div class="info">Место проведения:</div>
+                        <div class="event-location">Легкоатлетический манеж стадиона им.Ленина, Хабаровск</div>
+                    </div>
+                </div>
+                <div class="events-item swiper-slide">
+                    <div class="events-item__image-container">
+                        <img src="img/events/event1.png" alt="" class="events-item__img">
+                        <div class="item-into-shadow"></div>
+                        <h3 class="item-into-title">27-30 августа</h3>
+                    </div>
+                    <div class="events-item__info-container">
+                        <h4 class="info-title">MIMS AUTOMEHANIKA</h4>
+                        <div class="info">
+                            <span class="tag">Одежда,</span>
+                            <span class="tag">обувь,</span>
+                            <span class="tag">аксессуары</span>
+                        </div>
+                        <h5 class="event-date">22-24 августа</h5>
+                        <div class="info">Место проведения:</div>
+                        <div class="event-location">Легкоатлетический манеж стадиона им.Ленина, Хабаровск</div>
+                    </div>
+                </div>
+                <div class="events-item swiper-slide">
+                    <div class="events-item__image-container">
+                        <img src="img/events/event1.png" alt="" class="events-item__img">
+                        <div class="item-into-shadow"></div>
+                        <h3 class="item-into-title"></h3>
+                    </div>
+                    <div class="events-item__info-container">
+                        <h4 class="info-title"></h4>
+                        <div class="info">
+                            <span class="tag">Одежда,</span>
+                            <span class="tag">обувь,</span>
+                            <span class="tag">аксессуары</span>
+                        </div>
+                        <h5 class="event-date">22-24 августа</h5>
+                        <div class="info">Место проведения:</div>
+                        <div class="event-location">Легкоатлетический манеж стадиона им.Ленина, Хабаровск</div>
+                    </div>
+                </div>
+                <div class="events-item swiper-slide">
+                    <div class="events-item__image-container">
+                        <img src="img/events/event2.png" alt="" class="events-item__img">
+                        <div class="item-into-shadow"></div>
+                        <h3 class="item-into-title"></h3>
+                    </div>
+                    <div class="events-item__info-container">
+                        <h4 class="info-title"></h4>
+                        <div class="info">
+                            <span class="tag">Одежда,</span>
+                            <span class="tag">обувь,</span>
+                            <span class="tag">аксессуары</span>
+                        </div>
+                        <h5 class="event-date">22-24 августа</h5>
+                        <div class="info">Место проведения:</div>
+                        <div class="event-location">Легкоатлетический манеж стадиона им.Ленина, Хабаровск</div>
+                    </div>
+                </div>
+                <div class="events-item swiper-slide">
+                    <div class="events-item__image-container">
+                        <img src="img/events/event1.png" alt="" class="events-item__img">
+                        <div class="item-into-shadow"></div>
+                        <h3 class="item-into-title"></h3>
+                    </div>
+                    <div class="events-item__info-container">
+                        <h4 class="info-title"></h4>
+                        <div class="info">
+                            <span class="tag">Одежда,</span>
+                            <span class="tag">обувь,</span>
+                            <span class="tag">аксессуары</span>
+                        </div>
+                        <h5 class="event-date">22-24 августа</h5>
+                        <div class="info">Место проведения:</div>
+                        <div class="event-location">Легкоатлетический манеж стадиона им.Ленина, Хабаровск</div>
+                    </div>
+                </div>
+                <div class="events-item swiper-slide">
+                    <div class="events-item__image-container">
+                        <img src="img/events/event2.png" alt="" class="events-item__img">
+                        <div class="item-into-shadow"></div>
+                        <h3 class="item-into-title"></h3>
+                    </div>
+                    <div class="events-item__info-container">
+                        <h4 class="info-title"></h4>
+                        <div class="info">
+                            <span class="tag">Одежда,</span>
+                            <span class="tag">обувь,</span>
+                            <span class="tag">аксессуары</span>
+                        </div>
+                        <h5 class="event-date">22-24 августа</h5>
+                        <div class="info">Место проведения:</div>
+                        <div class="event-location">Легкоатлетический манеж стадиона им.Ленина, Хабаровск</div>
+                    </div>
+                </div>
+            </div>
+            <div class="events-pagination"></div>
+        </div>
+    </div>
     <div class="section"></div>
     <div class="section"></div>
 </div>
+<script src="../node_modules/jquery-scrollify/jquery.scrollify.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

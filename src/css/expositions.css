@@ -1,0 +1,43 @@
+.expositions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 62vh;
+}
+.expositions-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.exposition-item {
+    align-self: flex-start;
+    height: 47%;
+    position: relative;
+    background-color: gray;
+    overflow: hidden;
+    /*min-height: 160px;*/
+    /*margin: 5px 0;*/
+}
+.x1-width {
+    width: 18%;
+
+}
+.x1-half-width {
+    width: 28%;
+
+}
+.x2-height {
+    /*height: 100%;*/
+    align-self: stretch;
+}
+.exposition-item__img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+.expo-header {
+    margin-top: 2%;
+}
