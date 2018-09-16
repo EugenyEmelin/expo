@@ -1,12 +1,6 @@
 .main-carousel__container {
-    /*margin-top: 5px;*/
-    /*height: 289px;*/
-    /*max-height: 60vh;*/
-    /*overflow: hidden;*/
-    /*height: 30vh;*/
     width: 100vw;
     height: 25vh;
-    /*background-color: #181818;*/
     overflow: hidden;
 }
 .main-carousel__item {
@@ -14,15 +8,10 @@
     position: relative;
     overflow: hidden;
     border-radius: 3px;
-    /*height: 280px;*/
-    /*height: 200px;*/
-    /*max-width: 25vw;*/
 }
 .main-carousel__img {
     width: 100%;
-    /*height: calc(30vh - 40px);*/
     height: 25vh;
-    /*max-height: 50vh;*/
 }
 .main-carousel__item-info {
     display: flex;
@@ -54,4 +43,8 @@
     background-color: #fff;
     border-top: 1px solid #ffffff;
     margin: 10px 0 15px 0;
+}
+.carousel__item-text {
+    /*margin: 1%;*/
+    font-size: 90%;
 }

@@ -7,7 +7,7 @@
 }
 .events-wrapper {
     height: 100%;
-    padding: 0 2rem;
+    /*padding: 0 2rem;*/
     /*padding: 10px 45px;*/
 }
 .events-item {
@@ -49,4 +49,7 @@
 }
 .event-location {
     font-size: .95rem;
+}
+.calendar-header {
+    margin: 2% 0 .5% 0;
 }

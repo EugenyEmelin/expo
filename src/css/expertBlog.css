@@ -1,0 +1,66 @@
+.expertBlog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 60vh;
+}
+.expertBlog-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.expertBlog__main-post, .expertBlog__other-posts {
+    height: 100%;
+}
+.expertBlog__other-posts {
+    width: 58%;
+}
+.expertBlog__main-post {
+    position: relative;
+    width: 42%;
+    overflow: hidden;
+}
+.main-post__img {
+    /*width: auto;*/
+    height: 100%;
+}
+.main-post__info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    padding: 0 2% 2% 2%;
+    background: linear-gradient(transparent, rgba(0,0,0,.9));
+}
+.info-header {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.info-header__img-container {
+    position: relative;
+    height: 100%;
+    /*width: 12.5%;*/
+    overflow: hidden;
+}
+.info-header__img {
+    /*position: absolute;*/
+
+}
+.info-header__title-container {
+    padding: 0 1%;
+}
+.main-post__title {
+    color: #ffffff;
+    font-size: 110%;
+}
+.main-post__text {
+    color: #ffffff;
+    font-size: .82rem;
+    padding-top: 1%;
+}
