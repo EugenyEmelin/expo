@@ -11,7 +11,7 @@
     position: relative;
     height: 40px;
     width: 100vw;
-    background-color: #09508b;
+    background-color: #478295;
     top: 0;
     /*position: fixed;*/
     /*width: 100%;*/
@@ -39,7 +39,7 @@
     transition: all .15s ease-in-out;
 }
 .lang-selector__inner {
-     /*display: none;*/
+     display: none;
     opacity: 0;
     /*height: 0;*/
     transition: all .2s ease-in-out;
@@ -47,7 +47,7 @@
 
 .header__lang-selector:hover .lang-selector__inner {
     opacity: 1;
-    /*display: block;*/
+    display: block;
     transition: all .2s ease-in-out;
 }
 .lang-selector__current {

@@ -27,7 +27,7 @@
     height: auto;
     width: 100%;
 }
-.events-pagination {
+.events-pagination, .main-slider__pagination {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

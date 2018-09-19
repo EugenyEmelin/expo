@@ -21,7 +21,7 @@
 body {
     font-family: Ubuntu, Arial, sans-serif;
     background-color: #eeeeee;
-    overflow: hidden;
+    overflow-x: hidden;
  }
 .container {
     padding: 0 45px;
@@ -88,7 +88,7 @@ body {
     margin: 0 5px;
 }
 .pagination-bullets-active {
-    background-color: #b3b3b3;
+    background-color: #404040;
 }
 .info, .tags {
     color: #b7b7b7;

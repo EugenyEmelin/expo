@@ -31,26 +31,55 @@ $(document).ready(function() {
   // })
 
   $.scrollify({
-    section: '.section',
-    scrollSpeed: 1100,
+    section: ".section",
+    sectionName: "section-name",
+    interstitialSection: "bottom-scroll",
+    // easing: "easeOutCubic",
+    scrollSpeed: 1000,
+    offset: 0,
+    scrollbars: false,
+    standardScrollElements: "",
+    setHeights: false,
+    // overflowScroll: true,
+    updateHash: true,
+    touchScroll: true,
   })
 
   //основной слайдер
-  new Swiper('.main-slider__container', {
+  let mainSlider = new Swiper('.main-slider__container', {
     direction: 'horizontal',
     spaceBetween: 0,
+    noSwipingSelector: '#main-slider__tablet, .tablet-display',
     fadeEffect: {
       crossFade: true
     },
+  })
+  //слайдер на дисплее планшета
+  let tabletSlider = new Swiper('.tablet-display', {
+    direction: 'horizontal',
+    spaceBetween: 0,
     pagination: {
-      el: '.main-slider__pagination'
-    }
+      el: '.main-slider__pagination',
+      clickable: true,
+      bulletClass: 'pagination-bullets',
+      bulletActiveClass: 'pagination-bullets-active'
+    },
+
   })
 
   //карусель под слайдером
   let mainCarousel = new Swiper('.main-carousel__container', {
     slidesPerView: 5,
     spaceBetween: 5,
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 20,
+      stretch: -30,
+      depth: 100,
+      modifier: 1,
+      slideShadows : true,
+    },
+
   })
   //календарь событий
   let eventsCarousel = new Swiper('.events-container', {

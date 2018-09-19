@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/expertBlog.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/sliders.js"></script>
     <script src="js/libs/swiper.min.js"></script>
+    <script src="js/libs/jquery.scrollify.js"></script>
 </head>
 <body>
-<div id="pagepiling">
     <div class="main section">
         <header class="header container">
             <div class="header__lang-selector">
@@ -70,34 +71,70 @@
                 </a>
             </div>
         </header>
+        <div class="menu container">
+            <img src="img/main-slider-images/logo.png" alt="" class="menu-logo__img">
+            <ul class="menu-item__list">
+                <li class="menu-item">ONLINE ВЫСТАВКИ<span class="menu-slash">/</span></li>
+                <li class="menu-item">ВЕБИНАРЫ<span class="menu-slash">/</span></li>
+                <li class="menu-item">ЭКСПЕРТНЫЙ БЛОГ<span class="menu-slash">/</span></li>
+                <li class="menu-item">НОВОСТИ<span class="menu-slash">/</span></li>
+                <li class="menu-item">ИНФОРМАЦИЯ</li>
+            </ul>
+        </div>
         <div class="main-slider__container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <div class="main-slider__wrapper swiper-wrapper">
+                <div class="main-slider__item swiper-slide">
                     <img src="img/main-slider-images/tablet-screen.png" alt="" class="main-slider__img">
                 </div>
-                <div class="swiper-slide">
+                <div class="main-slider__item swiper-slide">
                     <img src="img/pexels-photo-374710.jpeg" alt="" class="main-slider__img">
                 </div>
-                <div class="swiper-slide">
+                <div class="main-slider__item swiper-slide">
                     <img src="img/pexels-photo-454880.jpeg" alt="" class="main-slider__img">
                 </div>
-                <div class="swiper-slide">
+                <div class="main-slider__item swiper-slide">
                     <img src="img/pexels-photo-456710.jpeg" alt="" class="main-slider__img">
                 </div>
-                <div class="swiper-slide">
+                <div class="main-slider__item swiper-slide">
                     <img src="img/adventure-air-aircraft-36487.jpg" alt="" class="main-slider__img">
                 </div>
             </div>
-            <div class="main-slider__pagination"></div>
-            <div class="tablet-and-hands">
-                <div class="tablet-display"></div>
+            <div class="tablet-container">
+                <div class="tablet-display">
+                    <div class="tablet-display__wrapper swiper-wrapper">
+                        <div class="main-slider__item swiper-slide">
+                            <img src="img/main-slider-images/tablet-screen.png" alt="" class="tablet__img">
+                        </div>
+                        <div class="main-slider__item swiper-slide">
+                            <img src="img/pexels-photo-374710.jpeg" alt="" class="tablet__img">
+                        </div>
+                        <div class="main-slider__item swiper-slide">
+                            <img src="img/pexels-photo-454880.jpeg" alt="" class="tablet__img">
+                        </div>
+                        <div class="main-slider__item swiper-slide">
+                            <img src="img/pexels-photo-456710.jpeg" alt="" class="tablet__img">
+                        </div>
+                        <div class="main-slider__item swiper-slide">
+                            <img src="img/adventure-air-aircraft-36487.jpg" alt="" class="tablet__img">
+                        </div>
+                    </div>
+                </div>
                 <img src="img/main-slider-images/tablet.png" alt="" id="main-slider__tablet">
                 <img src="img/main-slider-images/hand.png" alt="" id="main-slider__hand">
+                <div class="main-slider__pagination"></div>
             </div>
-            <img src="img/main-slider-images/logo.png" alt="" class="main-logo__img">
+        </div>
+    </div>
+    <div class="to-bottom-scroll section"></div>
+    <div class="no-full-height main-carousel__section">
+        <div class="important-events__container">
+
+        </div>
+        <div class="main-carousel__header section-header container">
+            <h1 class="section-title">ONLINE ВЫСТАВКИ ПАРТНЁРОВ</h1>
         </div>
         <div class="main-carousel__container">
-            <div class="main-carousel swiper-wrapper">
+            <div class="main-carousel__wrapper swiper-wrapper">
                 <div class="main-carousel__item swiper-slide">
                     <img src="img/pexels-photo-454880.jpeg" alt="" class="main-carousel__img">
                     <div class="main-carousel__item-info">
@@ -160,7 +197,7 @@
                             <p class="carousel__item-text">58-ая Международная выставка потребительской электроники</p>
                         </div>
                     </div>
-                    </div>
+                </div>
                 <div class="main-carousel__item swiper-slide">
                     <img src="img/pexels-photo-454880.jpeg" alt="" class="main-carousel__img">
                     <div class="main-carousel__item-info">
@@ -376,7 +413,5 @@
         </div>
     </div>
     <div class="section"></div>
-</div>
-<script src="js/libs/jquery.scrollify.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 .main-slider__container {
     width: 100vw;
     position: relative;
-    height: calc(75vh - 40px);
+    height: calc(100vh - 40px);
+    /*height: 1400px;*/
     overflow: hidden;
     background-color: #eeeeee;
     box-shadow: 0 20px 20px -20px #000 inset;
@@ -15,57 +16,84 @@
     position: relative;
     overflow: hidden;
     width: 100vw;
+    z-index: 2;
 }
-.main-slider__img {
+/*.main-slider__item::before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*background: hsla(0,0%,100%,.3);*/
+    /*-webkit-filter: blur(15px);*/
+    /*filter: blur(15px);*/
+    /*margin: -30px;*/
+    /*z-index: 2;*/
+/*}*/
+.main-slider__img, .tablet__img {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: calc(75vh - 40px);
 }
-.tablet-and-hands {
+.main-slider__img {
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    margin: -8px;
+}
+
+/****  TABLET  ****/
+
+.tablet-container {
     position: absolute;
-    right: 0;
     bottom: 0;
-    width: 54%;
-    height: 98%;
-    z-index: 99999;
+    width: 100%;
+    height: calc(88vh - 40px);
+    z-index: 9;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 #main-slider__tablet, #main-slider__hand {
-    position: absolute;
-    z-index: 99999;
+    z-index: 12;
 }
 #main-slider__tablet {
-    bottom: -13%;
-    right: 17%;
-    /*height: 110%;*/
-    width: 100%;
-    height: 110%;
-    z-index: 99;
+    position: relative;
+    /*top: 8vh;*/
+    pointer-events: none;
 }
 #main-slider__hand {
-    bottom: -23%;
+    position: absolute;
+    bottom: -26%;
     height: 60%;
     right: 0;
 }
-
+/* -- DISPLAY -- */
 .tablet-display {
     position: absolute;
-    top: 5%;
-    left: -2%;
-    right: 19%;
-    /*height: 100%;*/
-    bottom: 12%;
-    background-color: #fff;
-    z-index: 10;
-}
-.main-logo__img {
-    position: absolute;
+    align-self: flex-start;
     top: 3%;
-    left: 3%;
-    z-index: 9;
+    width: 790px;
+    height: 540px;
+    -webkit-transform: translateX(6%);
+    -moz-transform: translateX(6%);
+    -ms-transform: translateX(6%);
+    -o-transform: translateX(6%);
+    transform: translateX(6%);
+    background-color: #191919;
+    z-index: 11;
+    border-radius: 7%;
+    overflow: hidden;
+}
+.tablet__img {
 }
 .main-slider__pagination {
-
+    height: 15% !important;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(20%);
 }
 
 @media (max-width: 920px) {
